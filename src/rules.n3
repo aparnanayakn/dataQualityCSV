@@ -9,4 +9,4 @@
 
 [r1: (?x ns1:hasValue ?y) (?a ns1:hasValue ?b) equal(?y, ?b)  notEqual(?x, ?a)  -> print(?x ns1:uniquevalueViolation ?a) ]
 [r2: (?x ns1:hasDatatype owl:Nothing)  -> print(?x ns1:nullValueViolation) ]
-[r3: (?x ns1:hasDatatype ?y) (?x ns1:hasValue ?z) isDType(?z, ?y) -> print ("datatype violation ")]
+#[r3: (?x ns1:hasDatatype ?y) (?x ns1:hasValue ?z) isDType(?z, ?y) -> print ("datatype violation ")]

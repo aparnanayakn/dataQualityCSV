@@ -56,8 +56,6 @@ public class dqRootCause {
 	
 		Model deductions = infmodel.getDeductionsModel();
 		deductions.write(System.out, "N3"); 
-			
-		//InfModel infmodel = ModelFactory.createRDFSModel(data); */
 	/*	ValidityReport validity = infModel.validate();
 		if (validity.isValid()) {
 		    System.out.println("OK");
