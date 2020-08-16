@@ -1,0 +1,112 @@
+@prefix : <http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#hasDatatype
+:hasDatatype rdf:type owl:ObjectProperty ;
+             rdfs:domain :rowcolumn ;
+             rdfs:range [ rdf:type owl:Restriction ;
+                          owl:onProperty owl:topDataProperty ;
+                          owl:someValuesFrom rdfs:Literal
+                        ] .
+
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#hasValue
+:hasValue rdf:type owl:ObjectProperty ;
+          rdfs:domain :rowcolumn ;
+          rdfs:range :value .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#fFormat
+:fFormat rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :dataset ;
+         rdfs:range xsd:string .
+ 
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#fileName
+:fileName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :dataset ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#lastModified
+:lastModified rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :dataset ;
+              rdfs:range xsd:dateTimeStamp .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#columns
+:columns rdf:type owl:Class ;
+         owl:equivalentClass :rowcolumn ;
+         rdfs:subClassOf :dataset ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty owl:topDataProperty ;
+                           owl:someValuesFrom rdfs:Literal
+                         ] ;
+         owl:disjointWith :rows .
+
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#dataset
+:dataset rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#rowcolumn
+:rowcolumn rdf:type owl:Class ;
+           rdfs:subClassOf :columns ,
+                           :rows .
+
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#rows
+:rows rdf:type owl:Class ;
+      rdfs:subClassOf :dataset .
+
+
+###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#value
+:value rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty owl:topDataProperty ;
+                         owl:someValuesFrom rdfs:Literal
+                       ] .
+
+
+
+:R0 a :row .
+:R1 a :row .
+:R2 a :row .
+
+:R0C1 a :rowcolumn .
+:R0C2 a :rowcolumn .
+:R0C3 a :rowcolumn .
+:R0C4 a :rowcolumn .
+:R1C1 a :rowcolumn .
+:R1C2 a :rowcolumn .
+:R1C3 a :rowcolumn .
+:R1C4 a :rowcolumn .
+:R2C1 a :rowcolumn .
+:R2C2 a :rowcolumn .
+:R2C3 a :rowcolumn .
+:R2C4 a :rowcolumn .
+
+:c1 a :columns .
+:c2 a :columns .
+:c3 a :columns .
+:c4 a :columns .

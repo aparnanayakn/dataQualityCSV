@@ -1,0 +1,12 @@
+@prefix ns1: <http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+
+[r1: (?x ns1:hasValue ?y) (?a ns1:hasValue ?b) equal(?y, ?b)  notEqual(?x, ?a)  -> print(?x ns1:uniquevalueViolation ?a) ]
+[r2: (?x ns1:hasDatatype owl:Nothing)  -> print(?x ns1:nullValueViolation) ]
+#[r3: (?x ns1:hasDatatype ?y) (?x ns1:hasValue ?z) isDType(?z, ?y) -> print ("datatype violation ")]
