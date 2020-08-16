@@ -1,0 +1,64 @@
+@prefix ns1: <http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+ns1:c1 ns1:hasDatatype  owl:Nothing.
+
+ns1:c2 ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#string" .
+
+ns1:c3 ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#string" .
+
+ns1:c4 ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#int" .
+
+ns1:dataset ns2:fFormat "text/csv" ;
+    ns1:lastModified "Tue Aug 11 09:05:11 2020" ;
+    ns1:fileSize 57 .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R0/> a <http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ> .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R0c1> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#int" ;
+    ns1:hasValue "1234" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R0c2> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#Literal" ;
+    ns1:hasValue "p1" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R0c3> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#Literal" ;
+    ns1:hasValue "abc" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R0c4> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#int" ;
+    ns1:hasValue "100" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R1/> a <http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ> .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R1c1> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#int" ;
+    ns1:hasValue "100" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R1c2> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#Literal" ;
+    ns1:hasValue "p2" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R1c3> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#Literal" ;
+    ns1:hasValue "bcd" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R1c4> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#int" ;
+    ns1:hasValue "qer" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R2/> a <http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ> .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R2c1> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#int" ;
+    ns1:hasValue "asdsd" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R2c2> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#Literal" ;
+    ns1:hasValue "p3" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R2c3> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#Literal" ;
+    ns1:hasValue "123" .
+
+<http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ/R2c4> ns1:hasDatatype "http://www.w3.org/2001/XMLSchema#int" ;
+    ns1:hasValue "300" .
+
+
