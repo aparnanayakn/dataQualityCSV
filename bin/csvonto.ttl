@@ -35,7 +35,7 @@
          rdfs:subPropertyOf owl:topDataProperty ;
          rdfs:domain :dataset ;
          rdfs:range xsd:string .
-
+ 
 ###  http://www.semanticweb.org/d19125691/ontologies/2020/7/CSVDQ#fileName
 :fileName rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
